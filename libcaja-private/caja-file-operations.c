@@ -955,7 +955,13 @@ init_common (gsize job_size,
 	CommonJob *common;
 	GdkScreen *screen;
 
+/* avoid fase positive warning with Clang static analyzer */
+#ifdef __clang_analyzer__
+	common = g_malloc0 (job_size * sizeof (CommonJob));
+#else
+	/* this is the real code */
 	common = g_malloc0 (job_size);
+#endif
 
 	if (parent_window) {
 		common->parent_window = parent_window;
