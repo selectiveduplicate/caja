@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="https://github.com/mate-desktop/mate-icon-theme/raw/master/mate/16x16/apps/system-file-manager.png" />
+  <title>caja Code Analyzer results</title>
+</head>
+<body>
+<h1>
+  <a href="https://github.com/mate-desktop">mate-desktop</a>/<a href="https://github.com/mate-desktop/caja">caja</a> Static analyzer results
+</h1>
+  <a href="https://github.com/mate-desktop/caja" title="Github"><i class="fa fa-github fa-2x"></i>GitHub</a>
+  <a href="https://travis-ci.org/mate-desktop/caja/builds/504822038" title="Travis CI"><img src="https://travis-ci.org/mate-desktop/caja.svg?branch=master" alt="Build Status" /></a>
+<hr/>
+Commit: <a href="https://github.com/mate-desktop/caja/commit/842cf236c2885720843bdbf7256dc24d032c45d1">842cf236c2885720843bdbf7256dc24d032c45d1</a><br/>
+Compare: <a href="https://github.com/mate-desktop/caja/compare/238dd97cf2cb...842cf236c288">238dd97cf2cb...842cf236c288</a><br/>
+Branch: <a href="https://github.com/mate-desktop/caja/tree/clang_eelstring_memcpy_overflows">clang_eelstring_memcpy_overflows</a><br/>
+Time: 2019-03-11 18:05:56+00:00<br/>
+Messages:<br/>
+<pre>
+eel-string: Fix: 'memcpy' overflows destination buffer
+
+Fixes Clang static analyzer warning:
+
+eel-string.c:319:13: warning: Memory copy function overflows destination buffer
+            memcpy (result_position, p, remaining_length);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</pre>
+<hr/>
+<ul>
+<li><a href=2019-03-11-175701-7250-1@842cf236c288_clang_eelstring_memcpy_overflows>2019-03-11-175701-7250-1@842cf236c288_clang_eelstring_memcpy_overflows</a></li>
+<li><a href=2019-03-08-235618-7246-1@a301718c24ad_cajafile_identicalbranches>2019-03-08-235618-7246-1@a301718c24ad_cajafile_identicalbranches</a></li>
+<li><a href=2019-03-08-221954-7247-1@dee22808db8c_fileoperations_mem>2019-03-08-221954-7247-1@dee22808db8c_fileoperations_mem</a></li>
+<li><a href=2019-03-08-082743-7247-1@bdceb0f13d5b_master>2019-03-08-082743-7247-1@bdceb0f13d5b_master</a></li>
+<li><a href=2019-03-08-022833-7246-1@54a7b1a706f0_clang-analyzer>2019-03-08-022833-7246-1@54a7b1a706f0_clang-analyzer</a></li>
+<li><a href=2019-03-07-033519-7247-1@2197e3338233_clang-analyzer>2019-03-07-033519-7247-1@2197e3338233_clang-analyzer</a></li>
+<li><a href=2019-03-07-030519-7249-1@25032580f049_clang-analyzer>2019-03-07-030519-7249-1@25032580f049_clang-analyzer</a></li>
+<li><a href=2019-03-05-034951-7248-1@81b67f9285bf_clang-analyzer>2019-03-05-034951-7248-1@81b67f9285bf_clang-analyzer</a></li>
+<li><a href=2019-03-05-032007-7247-1@b7624a032bfb_clang-analyzer>2019-03-05-032007-7247-1@b7624a032bfb_clang-analyzer</a></li>
+<li><a href=2019-03-01-092612-7263-1@b962d4c4701e>2019-03-01-092612-7263-1@b962d4c4701e</a></li>
+</ul>
+</body>
+</html>
